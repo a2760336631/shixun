@@ -13,10 +13,10 @@ app = Flask(__name__)
 person = {
     'last_name' : '阮',
     'first_name': '辉',
-    'address' : '湖北师范大学',
+    'address' : 'xx大学',
     'job': 'Web developer',
     'tel': '0000001',
-    'email': '2760336631@qq.com.com',
+    'email': '11111@qq.com.com',
     'description' : '本人有比较强的自我学习能力，学习知识速度比较快。性格比较积极乐观，善于与其他人交流沟通。',
     'social_media' : [
         {
@@ -59,7 +59,7 @@ person = {
     ],
     'education' : [
         {
-            'university': '湖北师范大学',
+            'university': 'xx大学',
             'degree': '学士',
             'description' : '软件工程专业',
             'mention' : 'Bien',

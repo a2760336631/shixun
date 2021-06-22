@@ -36,7 +36,7 @@ person = {
             'icon' : 'fa-twitter'
         }
     ],
-    'img': 'img/img1.jpg',
+    'img': 'img/img_nono.jpg',
     'experiences' : [
         {
             'title' : 'Web Developer',

@@ -17,7 +17,7 @@ person = {
     'job': 'Web developer',
     'tel': '0000001',
     'email': '2760336631@qq.com.com',
-    'description' : '本人积极乐观，有责任感',
+    'description' : '本人有比较强的自我学习能力，学习知识速度比较快。性格比较积极乐观，善于与其他人交流沟通。',
     'social_media' : [
         {
             'link': 'https://www.facebook.com/',
@@ -39,45 +39,31 @@ person = {
     'img': 'img/img_nono.jpg',
     'experiences' : [
         {
-            'title' : 'Web Developer',
-            'company': 'AZULIK',
-            'description' : 'Project manager and lead developer for several AZULIK websites.',
+            'title' : 'python爬虫',
+            'company': '王元平国际有限公司',
+            'description' : '对网页的视频信息进去爬取，并对爬取的数据进行分析，查看热门视频数据与什么相关.',
             'timeframe' : 'July 2018 - November 2019'
         },
         {
-            'title' : 'Freelance Web Developer',
-            'company': 'Independant',
-            'description' : 'Create Wordpress websites for small and medium companies. ',
+            'title' : '购物商城',
+            'company': '王元平国际有限公司',
+            'description' : '添加登录注册系统和商品添加 ',
             'timeframe' : 'February 2017 - Present'
         },
         {
-            'title' : 'Sharepoint Intern',
-            'company': 'ALTEN',
-            'description' : 'Help to manage a 600 Sharepoint sites platform (audit, migration to Sharepoint newer versions)',
+            'title' : '购票系统',
+            'company': '王元平国际有限公司',
+            'description' : '添加购票信息和对机票的添加删除',
             'timeframe' : 'October 2015 - October 2016'
         }
     ],
     'education' : [
         {
-            'university': 'Paris Diderot',
-            'degree': 'Projets informatiques et Startégies d\'entreprise (PISE)',
-            'description' : 'Gestion de projets IT, Audit, Programmation',
+            'university': '湖北师范大学',
+            'degree': '学士',
+            'description' : '软件工程专业',
             'mention' : 'Bien',
             'timeframe' : '2015 - 2016'
-        },
-        {
-            'university': 'Paris Dauphine',
-            'degree': 'Master en Management global',
-            'description' : 'Fonctions supports (Marketing, Finance, Ressources Humaines, Comptabilité)',
-            'mention' : 'Bien',
-            'timeframe' : '2015'
-        },
-        {
-            'university': 'Lycée Turgot - Paris Sorbonne',
-            'degree': 'CPGE Economie & Gestion',
-            'description' : 'Préparation au concours de l\'ENS Cachan, section Economie',
-            'mention' : 'N/A',
-            'timeframe' : '2010 - 2012'
         }
     ],
     'programming_languages' : {

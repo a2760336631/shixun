@@ -11,32 +11,32 @@ import csv, re, operator
 app = Flask(__name__)
 
 person = {
-    'first_name': 'Nohossat',
-    'last_name' : 'TRAORE',
-    'address' : '9 rue Léon Giraud · PARIS · FRANCE',
+    'last_name' : '阮',
+    'first_name': '辉',
+    'address' : '湖北师范大学',
     'job': 'Web developer',
-    'tel': '0678282923',
-    'email': 'nohossat.tra@yahoo.com',
-    'description' : 'Suite à une expérience internationale en développement web et dans le domaine des arts, l’impact de l’intelligence artificielle dans nos vies me surprend de jour en jour. \n Aujourd’hui, je souhaite changer de cap et comprendre les secrets que recèlent nos données. J’aimerais mettre à profit ces découvertes au service des entreprises/associations à dimension sociale.',
+    'tel': '0000001',
+    'email': '2760336631@qq.com.com',
+    'description' : '本人积极乐观，有责任感',
     'social_media' : [
         {
-            'link': 'https://www.facebook.com/nono',
+            'link': 'https://www.facebook.com/',
             'icon' : 'fa-facebook-f'
         },
         {
-            'link': 'https://github.com/nono',
+            'link': 'https://github.com/a2760336631',
             'icon' : 'fa-github'
         },
         {
-            'link': 'linkedin.com/in/nono',
+            'link': 'linkedin.com/in/',
             'icon' : 'fa-linkedin-in'
         },
         {
-            'link': 'https://twitter.com/nono',
+            'link': 'https://twitter.com/',
             'icon' : 'fa-twitter'
         }
     ],
-    'img': 'img/img_nono.jpg',
+    'img': 'img/img1.jpg',
     'experiences' : [
         {
             'title' : 'Web Developer',

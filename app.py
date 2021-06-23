@@ -14,7 +14,7 @@ person = {
     'last_name' : '阮',
     'first_name': '辉',
     'address' : 'xx大学',
-    'job': 'Web developer',
+    'job': '软件工程师',
     'tel': '0000001',
     'email': '11111@qq.com.com',
     'description' : '本人有比较强的自我学习能力，学习知识速度比较快。性格比较积极乐观，善于与其他人交流沟通。',
@@ -83,7 +83,7 @@ person = {
 
 @app.route('/')
 def cv(person=person):
-    return render_template('index.html', person=person)
+    return render_template('index1.html', person=person)
 
 
 

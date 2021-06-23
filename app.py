@@ -11,13 +11,27 @@ import csv, re, operator
 app = Flask(__name__)
 
 person = {
-    'last_name' : '阮',
-    'first_name': '辉',
+    'last_name' : 'x',
+    'first_name': 'x',
     'address' : 'xx大学',
     'job': '软件工程师',
     'tel': '0000001',
     'email': '11111@qq.com.com',
+    'dev':'我叫xx,今年22岁。毕业于xx大学，想求职公司的软件设计师职位。',
     'description' : '本人有比较强的自我学习能力，学习知识速度比较快。性格比较积极乐观，善于与其他人交流沟通。',
+    'skill':'精通面向对象编程和计算相关的数学。精通java和python,学习过对Android方面的开发',
+    'interests1':'小型独立编码项目（半专业）,音乐,视频,大型多人在线游戏。',
+    'work':'一个Android的无障碍应用程序，一个我随意使用的博客平台的桌面主题，以及一个摄影项目，详细描述了城市环境中自然和人工的相互作用。',
+    'contact':[
+        {
+            'way':'电话',
+            'lk':'111111'
+        },
+        {
+            'way':'邮箱',
+            'lk':'2222@qq.com'
+        }
+    ],
     'social_media' : [
         {
             'link': 'https://www.facebook.com/',
@@ -40,19 +54,19 @@ person = {
     'experiences' : [
         {
             'title' : 'python爬虫',
-            'company': '王元平国际有限公司',
+            'company': 'xx国际有限公司',
             'description' : '对网页的视频信息进去爬取，并对爬取的数据进行分析，查看热门视频数据与什么相关.',
             'timeframe' : 'July 2018 - November 2019'
         },
         {
             'title' : '购物商城',
-            'company': '王元平国际有限公司',
+            'company': 'xx国际有限公司',
             'description' : '添加登录注册系统和商品添加 ',
             'timeframe' : 'February 2017 - Present'
         },
         {
             'title' : '购票系统',
-            'company': '王元平国际有限公司',
+            'company': 'xx国际有限公司',
             'description' : '添加购票信息和对机票的添加删除',
             'timeframe' : 'October 2015 - October 2016'
         }

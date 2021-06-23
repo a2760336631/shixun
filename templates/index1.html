@@ -20,42 +20,54 @@
     <canvas id="bg"></canvas>
     <main id="content">
         <h1>
-            <div class="hex moved"></div><span>About the Dev</span></h1>
+            <div class="hex moved"></div><span>自我介绍</span></h1>
         <div class="subtext" id="main">
-            <p>The name's Lin (which is short for Lindeun or Laighlin, depending on where you know me from). I'm a 24-year-old South Asian design student with a tech sort of background and a lot to say about the trends and direction of the contemporary design
-                world.</p>
-            <p>I wanted to be an engineer for most of my life. By the time I changed my mind about that, my liaison with the applied sciences had drastically altered my worldview already. This still informs much of my work and work ethic - design is no less
-                of a science in my eyes than physics or computing. (In other words, I like design as long as I can be a nerd about it.)</p>
+            <p>{{ person.dev }}</p>
+            <p>{{ person.description }}</p>
         </div>
         <h2>
-            <div class="hex"></div><span>Skills</span></h2>
+            <div class="hex"></div><span>技能</span></h2>
         <div class="subtext coll">
-            A good grasp of object-oriented programming and computing-related math as a whole. Proficient in CSS3 and HTML5; making significant inroads into JavaScript and JQuery. Adobe Illustrator is both enjoyable for me and putty in my hands. <i>Putty.</i>            In addition to my knowledge of coding, I also speak five human languages and am in the process of learning a few more.
+            {{ person.skill }}
         </div>
         <h2>
-            <div class="hex"></div><span>Hobbies & Interests</span></h2>
+            <div class="hex"></div><span>兴趣爱好</span></h2>
         <div class="subtext coll">
-            Small indie coding projects (semi-professionally). Music (unprofessionally). Massively multiplayer online games (clumsily). Cooking (hungrily).
+            {{ person.interests1}}
         </div>
         <h2>
-            <div class="hex"></div><span>Currently Working On</span></h2>
+            <div class="hex"></div><span>工作经验</span></h2>
         <div class="subtext coll">
-            An accessibility app for Android, a couple of desktop themes for a blogging platform I casually use, and a photography project detailing the interplay of natural and artifical in urban environments.
+             {% for experience in person.experiences %}
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">{{ experience.title }}</h3>
+                            <div class="time">{{ experience.timeframe }}</div>
+                        </div><!--//upper-row-->
+                        <div class="company">{{ experience.company }}</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>{{ experience.description }}</p>  
+                    </div><!--//details-->
+                </div><!--//item-->
+                {% endfor %}
         </div>
         
         <h2>
-            <div class="hex"></div><span>Find Me</span></h2>
+            <div class="hex"></div><span>找到我的方式</span></h2>
         <div class="subtext coll">
-            <a>Twitter</a> | <a>Tumblr</a> | <a>Codepen</a> | <a>Behance</a>
+            <a>QQ</a> | <a>微信</a> 
         </div>
         
         <h2>
-            <div class="hex"></div><span>Contact Me</span></h2>
+ 
+            <div class="hex"></div><span>联系方式</span></h2>
         <div class="subtext coll">
             <ul>
-                <li>Phone: +12 345 678 90</li>
-                <li>E-mail: <a>lindeun@yahoo.com</a></li>
-                <li>Discord: <a>Laighlin#0371</a></li>
+             {% for contact1 in person.contact %}
+                <li> {{ contact1.way}}: {{ contact1.lk}}</li>
+             {% endfor %}
             </ul>
         </div>
     </main>

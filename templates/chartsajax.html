@@ -4,31 +4,76 @@
     <meta charset="UTF-8">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        function cb(selection) {
-            $.getJSON({
-                url: "/callback", data: { 'data': selection }, success: function (result) {
-                    Plotly.newPlot('chart', result, {});;
-                }
-            });
-        }
-    </script>
+
 
 
 
 </head>
 
 <body style="font-family:arial, sans-serif">
-    <h1>1952-2007年的各国GDP可视化</h1>
-    <h2>输入国家如：India或China（大写字母开头）</h2>
-    
-    <input type="text" id="fname" name="fname" onchange="cb(this.value)">
+ <h1>企鹅种类可视化</h1>
+    <p>原始企鹅数据集的简化数据。包含变量：
+
+species：企鹅种类（Chinstrap，Adélie或Gentoo）
+
+culmen_length_mm：杆长（mm）
+
+culmen_depth_mm：孔深（mm）
+
+flipper_length_mm：脚蹼长度（mm）
+
+body_mass_g：体重（克）
+
+island：帕尔默群岛（南极洲）中的岛屿名称（Dream，Torgersen或Biscoe）
+
+sex：企鹅性
+</p>
+   
+    <h2>散点图</h2>
+    <p>从图中可以看出Adelie Penguin种类企鹅，body_mass_g和 body_mass_g值普遍大于其它两种企鹅的数值。Chinstrap penguin和Gentoo penguin的数值相差不多。</p>
     <div id="chart" class="chart"></div>
+<h2>直方图</h2>
+<p>Gentoo penguin种类的culmen_depth在13到18之间，culmen_length在0到1300.Adelie Penguin种类的culmen_depth在15到22之间，culmen_length在0到900.Chinstrap penguin种类的culmen_depth在16到21之间，culmen_length在0到1500.</p>
+    <div id="chart1" class="chart"></div>
+<h2>企鹅特征图</h2>
+<p>对企鹅的不同种类的四个基本特征进行分析（ulmen_length_mm：杆长（mm）
+
+culmen_depth_mm：孔深（mm）
+
+flipper_length_mm：脚蹼长度（mm）
+
+body_mass_g：体重（克））</p>
+    <div id="chart2" class="chart"></div>
+<h2>平行坐标折线图</h2>
+<p>对企鹅的不同种类的四个基本特征进行分析（Culmen_length_mm：杆长（mm）
+
+culmen_depth_mm：孔深（mm）
+
+flipper_length_mm：脚蹼长度（mm）
+
+body_mass_g：体重（克））来判断企鹅的种类，例如Culmen_length在40到59.6，culmen_depth在13到18，flipper_length在200到230，body_mass在4000dao6300的企鹅种类是3</p>
+    <div id="chart3" class="chart"></div>
+<h2>分布图</h2>
+<p>从图中可以看出不同种类企鹅culmen_depth和culmen_length分布情况。Gentoo penguin种类的culmen_depth在13到18之间，culmen_length在0到1300.Adelie Penguin种类的culmen_depth在15到22之间，culmen_length在0到900.Chinstrap penguin种类的culmen_depth在16到21之间，culmen_length在0到1500.</p>
+    <div id="chart4" class="chart"></div>
+<h2>热力图</h2>
+<p>culmen_depth和culmen_length的热力值关系，颜色越亮关系越紧密</p>
+    <div id="chart5" class="chart"></div>
 </body>
 
 <script>
     d = {{ graphJSON | safe }};
     Plotly.newPlot('chart', d, {});
+    d = {{ graphJSON1 | safe }};
+    Plotly.newPlot('chart1', d, {});
+    d = {{ graphJSON2 | safe }};
+    Plotly.newPlot('chart2', d, {});
+    d = {{ graphJSON3 | safe }};
+    Plotly.newPlot('chart3', d, {});
+    d = {{ graphJSON4 | safe }};
+    Plotly.newPlot('chart4', d, {});
+    d = {{ graphJSON5 | safe }};
+    Plotly.newPlot('chart5', d, {});
 </script>
 
 

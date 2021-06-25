@@ -8,6 +8,7 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+
 <html>
 
 <head>
@@ -24,8 +25,16 @@
         <div class="subtext" id="main">
             <p>{{ person.dev }}</p>
             <p>{{ person.description }}</p>
+           
         </div>
-        <h2>
+         <h2>
+            <div class="hex"></div><span>可视化分析</span></h2>
+        <div class="subtext coll">
+           <p><a href="{{url_for('index')}}" target="_blank">对企鹅种类分析</a></p>
+           <p><a href="{{url_for('index1')}}" target="_blank">对顾客小费分析</a></p>
+
+        </div>
+         <h2>
             <div class="hex"></div><span>技能</span></h2>
         <div class="subtext coll">
             {{ person.skill }}
@@ -52,6 +61,7 @@
                     </div><!--//details-->
                 </div><!--//item-->
                 {% endfor %}
+                
         </div>
         
         <h2>
@@ -68,6 +78,7 @@
              {% for contact1 in person.contact %}
                 <li> {{ contact1.way}}: {{ contact1.lk}}</li>
              {% endfor %}
+             
             </ul>
         </div>
     </main>
